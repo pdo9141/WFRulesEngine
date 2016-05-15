@@ -23,6 +23,7 @@ namespace RulesTester
                 try
                 {
                     Order order = new Order();
+                    order.ClientID = 36;
                     order.ReferenceNumber = "TEST20160515";
                     RuleValidation validation = new RuleValidation(order.GetType(), null);
                     RuleExecution execution = new RuleExecution(validation, order);
